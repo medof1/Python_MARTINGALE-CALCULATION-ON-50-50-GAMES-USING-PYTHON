@@ -1,7 +1,4 @@
 import random
-import matplotlib.pyplot as plt
-import matplotlib.style as mplstyle
-from matplotlib.animation import FuncAnimation
 
 print("\nDEFAULT VALUE:")
 print("Max Martingale = 13")
@@ -60,7 +57,7 @@ def baccarat():
 while(1):
 	if batch <= startingBatch:
 		baccarat()
-		if martingale >= maxMartingale:
+		if martingale > maxMartingale:
 			lose += 1
 			martingale = 1
 			sample = 0
